@@ -486,7 +486,7 @@ Created by : mutationthemes
      background: none;
      margin-top: 3.125em;
 }
-.video-play-but:after {
+.video-play-but.paused:after {
     border-color: transparent transparent transparent #ffffff;
     border-style: solid;
     border-width: 17px 0 17px 24px;
@@ -500,7 +500,7 @@ Created by : mutationthemes
     transform: translateY(-50%);
   }
 
-  .video-play-but.paused:after {
+  .video-play-but:after {
     border-left: 17px solid #ffffff;
     border-top: 17px solid;
     border-bottom: 0 solid transparent;
