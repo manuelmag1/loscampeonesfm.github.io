@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- Metas -->
+      <meta charset="utf-8">
+      <title>Los Campeones FM</title>
+      <link rel="icon" type="image/x-icon" href="/img/logo.png">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Css -->
+      <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+      <link href="css/base.css" rel="stylesheet" type="text/css" media="all"/>
+      <link href="css/main.css" rel="stylesheet" type="text/css" media="all"/>
+      <link href="css/flexslider.css" rel="stylesheet" type="text/css"  media="all" />
+      <link href="css/magnific-popup.css" rel="stylesheet" type="text/css"  media="all" />
+      <link href="css/fonts.css" rel="stylesheet" type="text/css"  media="all" />
+      <link href="http://fonts.googleapis.com/css?family=Dosis:100,300,400,600,700" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,300,400,400i,600,700,800" rel="stylesheet">
+   </head>
+   <body>
+
+      <!-- Preloader -->
+      <div class="loader">
+         <!-- Preloader inner -->
+         <div class="loader-inner">
+            <svg width="120" height="220" viewbox="0 0 100 100" class="loading-spinner" version="1.1" xmlns="http://www.w3.org/2000/svg">
+               <circle class="spinner" cx="50" cy="50" r="21" fill="#13181d" stroke-width="2"/>
+            </svg>
+         </div>
+         <!-- End preloader inner -->
+      </div>
+      <!-- End preloader-->
+
+      <!--Wrapper-->
+      <!-- Barra de Cookies -->
+    <div class="cookie-bar">
+      <p>Este sitio utiliza cookies para mejorar la experiencia de usuario. Al navegar por el sitio, aceptas el uso de cookies. <a href="politicas-cookies.html" target="_blank">Más información</a></p>
+      <button id="accept-cookies" >Aceptar</button>
+    </div>
+    <!-- End Barra de Cookies -->
+
+      <div class="wrapper">
+         <div class="block-search-form">
+            <div class="block-content">
+               <div class="container">
+                  <!--end of row-->
+                  <div class="row justify-content-center">
+                     <div class="col-12 col-md-10 col-lg-8">
+                        <form method="get"  >
+                           <div class="card  bg-red ">
+                              <div class="card-body  row no-gutters align-items-center">
+                                 <div class="col-auto">
+                                    <i class="icon-search"></i>
+                                 </div>
+                                 <!--end of col-->
+                                 <div class="col">
+                                    <input class="form-control form-control-lg form-control-border0" placeholder="Escribe una palabra..." type="search">
+                                 </div>
+                                 <!--end of col-->
+                                 <div class="col-auto">
+                                    <button type="submit" class="btn  btn-primary uppercase border-3">
+                                    Buscar Ahora</button>
+                                 </div>
+                                 <!--end of col-->
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                     <!--end of col-->
+                  </div>
+                  <!--end of row-->
+               </div>
+            </div>
+         </div>
+         <!--Hero section-->
+         <section class="hero">
+            <!--Main slider-->
+            <div class="main-slider slider flexslider">
+               <ul class="slides">
+                  <li>
+                     <div class="background-img overlay zoom">
+                        <img src="img/loscampeones.jpg" alt="">
+                     </div>
+                     <!--Container-->
+                     <div class="container hero-content">
+                        <!--Row Audio-->
+                        <div class="row">
+                           <div class="col-sm-12">
+                              <!--Inner hero-->
+                              <div class="inner-hero">
+                                 <div class="text-center">
+                                    <h1>EN VIVO</h1>
+                                 </div>
+                                 <div class="video-play-but" >
+                                    <audio id="audio-player" controls autoplay >
+                                      <source src="http://stream.zeno.fm/pkc5xmbgkiduv" type="audio/mpeg">
+                                      Tu navegador no soporta la reproducción de audio.
+                                    </audio>
+                                  </div>
+                              </div>
+                           </div>
+                           <!--End row Audio-->
+                        </div>
+                        <!--End container-->
+                     </div>
+                     <!--End inner hero-->
+                  </li>
+<!--                  <li>
+                     <div class="background-img overlay zoom">
+                        <img src="img/2.jpg" alt="">
+                     </div>
+                     <!--Container
+                     <div class="container hero-content">
+                        <!--Row
+                        <div class="row">
+                           <div class="col-sm-12 text-center">
+                              <!--Inner hero
+                              <div class="inner-hero">
+                                 <h1 class="large text-white uppercase mb-0">limitless</h1>
+                                 <h5 class="mb-0 text-white uppercase">New Album Available Everywhere</h5>
+                                 <a class="video-play-but popup-youtube" href="https://www.youtube.com/watch?v=Gc2en3nHxA4"></a>
+                              </div>
+                           </div>
+                           <!--End row
+                        </div>
+                        <!--End container
+                     </div>
+                     <!--End inner hero
+                  </li>-->
+               </ul>
+            </div>
+            <!--End main slider-->
+            <!--Header-->
+            <header class="header default">
+               <div class=" left-part">
+                  <a class="logo scroll" href="#wrapper">
+                     <h2 class="mb-0 uppercase">Los Campeones FM</h2>
+                  </a>
+               </div>
+               <div class="right-part">
+                  <nav class="main-nav">
+                     <div class="toggle-mobile-but">
+                        <a href="#" class="mobile-but" >
+                           <div class="lines"></div>
+                        </a>
+                     </div>
+                     <ul class="main-menu list-inline">
+                        <li><a class="scroll list-inline-item" href="#wrapper">En vivo</a></li>
+                        <li><a class="scroll list-inline-item" href="#patrocinios">patrocinios</a></li>
+                       <!-- <li><a class="scroll list-inline-item" href="#discography">discography</a></li> -->
+                        <li><a class="scroll list-inline-item" href="#members">equipo</a></li>
+                       <!-- <li class="dropdown"><a class="scroll list-inline-item" href="#tour">Tours</a> --> 
+
+
+                        </li>
+
+
+                      <!-- <li><a class="scroll list-inline-item" href="#gallery">Gallery</a></li> -->
+      <li><a class="scroll list-inline-item " href="#noticias">noticias</a>
+
+                          
+
+                        </li>
+                      <li><a class="scroll list-inline-item" href="#contact">Contacto</a></li>
+                        
+                     <!--      <li class="block-helper">
+                           <a href="#album" class="scroll"><span ><i class="icon-cd-2"></i></span></a>
+                        </li> 
+                        <li class="block-helper">
+                           <span class="icon search-ico"><i class="icon-search"></i></span>
+                        </li>-->
+                     </ul>
+                  </nav>
+               </div>
+            </header>
+            <!--End header-->
+         </section>
+         <!--End hero section-->
+         <!--Latest album section-->
+         <!--End latest album section-->
+         <!--About section-->
+         <!--End about section-->
+         <!--Discography section-->
+         <!--End discography section-->
+         <!--Divider section-->
+         <section id="patrocinios" class="divider" style="background-color: rgb(240, 240, 240);">
+            <div >
+            </div>
+            <!--Container-->
+            <div class="container">
+               <!--Row-->
+               <div class="row justify-content-center">
+                  <div class="col-12 col-md-10 col-lg-9">
+                     <div class="block-content text-center gap-one-bottom-md">
+                        <div class="block-title ">
+                           <h1 style="color: #13181d;">PATAROCINIOS </h1>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!--End row-->
+            </div>
+            <!--End container--> 
+            <!-- img Patrocinios-->   
+            <div class="slider2" style="padding-top: 0px;">
+               <div class="slide2-track">
+                 <div class="slide2">
+                   <img src="img/1.png" alt="">
+                 </div>
+                 <div class="slide2">
+                  <img src="img/2.png" alt="">
+                </div>
+                <div class="slide2">
+                  <img src="img/3.png" alt="">
+                </div>
+                <div class="slide2">
+                  <img src="img/4.png" alt="">
+                </div>
+                <div class="slide2">
+                  <img src="img/5.png" alt="">
+                </div>
+                <div class="slide2">
+                  <img src="img/6.png" alt="">
+                </div>
+                <div class="slide2">
+                  <img src="img/7.png" alt="">
+                </div>
+                <div class="slide2">
+                  <img src="img/1.png" alt="">
+                </div>
+                <div class="slide2">
+                 <img src="img/2.png" alt="">
+               </div>
+               <div class="slide2">
+                 <img src="img/3.png" alt="">
+               </div>
+               <div class="slide2">
+                 <img src="img/4.png" alt="">
+               </div>
+               <div class="slide2">
+                 <img src="img/5.png" alt="">
+               </div>
+               <div class="slide2">
+                 <img src="img/6.png" alt="">
+               </div>
+               <div class="slide2">
+                 <img src="img/7.png" alt="">
+               </div>
+               </div>
+             </div>
+             <!-- End img Patrocinios-->        
+         </section>
+         <!--End divider section-->
+         <!-- members section-->
+         <section id="members" class="band main ">
+            <!--Container-->
+            <div class="container">
+               <!--Row-->
+               <div class="row justify-content-center">
+                  <div class="col-12 col-md-10 col-lg-9">
+                     <div class="block-content text-center gap-one-bottom-md">
+                        <div class="block-title ">
+                           <h1 class="uppercase">equipo</h1>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!--End row-->
+            </div>
+            <!--End container-->
+            <!--Container-->
+            <div class="container">
+               <!--Row-->
+               <div class="row">
+                  <div class="col-md-4 col-lg-4">
+                     <div class="block-member">
+                        <img src="img/455.jpg" alt="">
+                        <div class="member-info">
+                           <h6 class="uppercase mb-0 ">William Montoya</h6>
+                           <span class=" mt-0"> Comentarista</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4 col-lg-4">
+                     <div class="block-member">
+                        <img src="img/55.jpg" alt="">
+                        <div class="member-info">
+                           <h6 class="uppercase mb-0 ">Daniela</h6>
+                           <span class=" mt-0"> Comunnity Manager</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4 col-lg-4">
+                     <div class="block-member">
+                        <img src="img/4555.jpg" alt="">
+                        <div class="member-info">
+                           <h6 class="uppercase mb-0 ">Lili</h6>
+                           <span class=" mt-0">Directora</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!--End row-->
+            </div>
+            <!--End container-->
+         </section>
+         <!--End band members section-->
+         <!--Tours section-->
+         <!--End tour section-->
+
+
+         <!--News section-->
+         <section id="noticias" class="news main bg-secondary">
+            <!--Container-->
+            <div class="container">
+               <!--Row-->
+               <div class="row justify-content-center ">
+                  <div class="col-12 col-md-10 col-lg-9">
+                     <div class="block-content  gap-one-bottom-md text-center">
+                        <div class="block-title ">
+                           <h1 class="uppercase">Noticias</h1>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!--End row-->
+            </div>
+            <!--End container-->
+            <!--Container-->
+            <div class="container">
+               <ul class="news-list">
+                  <li class="row align-items-center justify-content-around">
+                     <div class="col-12 col-md-6 order-md-2">
+                        <div class="block-content">
+                           <a href="https://www.facebook.com/photo?fbid=642585877870679&set=a.520423170086951" target="_blank"> <img alt="" class="img-fluid animated" src="img/0206.jpg"></a>
+                        </div>
+                     </div>
+                     <div class="col-12 col-md-6 col-lg-5  order-md-1 ">
+                        <div class="block-content text-left">
+                           <span class="mb-2 opc-70">Feb 06, 2023</span>
+                           <h2 > Joel Graterol "ex América de Cali" nuevo jugador de Panetolikos</h2>
+                           <p class="lead">
+                              El guárdameta Joel Graterol ex América de Cali  fue presentado como nuevo jugador de Panetolikos de la Superliga de Grecia. Firmó contrato hasta junio de 2024, con posible extensión y cláusula de salida. 
+                           </p>
+                           <a href="https://www.facebook.com/photo?fbid=642585877870679&set=a.520423170086951" target="_blank">Leer Mas...› </a>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="row align-items-center justify-content-around">
+                     <div class="col-12 col-md-6 order-1">
+                        <div class="block-content">
+                           <a href="https://www.facebook.com/photo?fbid=642545501208050&set=pcb.642545621208038" target="_blank"><img alt="" class="img-fluid animated" src="img/06232.jpg"></a>
+                        </div>
+                     </div>
+                     <!--end of col-->
+                     <div class="col-12 col-md-6 col-lg-5  order-2 text-left">
+                        <div class="block-content text-left">
+                           <span class="mb-2 opc-70">Feb 06, 2023</span>
+                           <h2>Seleccion Colombia jugará dos partidos</h2>
+                           <p class="lead">
+                              🇨🇴 La Selección Colombia - FCFSeleccionCol  masculina de mayores jugará 2 partidos amistosos en la fecha FIFA de marzo. Tendrán como rivales a su similar de Corea el 24 de marzo y el 28 harán lo propio frente a Japón. 
+                           </p>
+                           <a href="https://www.facebook.com/photo?fbid=642545501208050&set=pcb.642545621208038" target="_blank">leer Más...›</a>
+                        </div>
+                     </div>
+                     <!--end of col-->
+                  </li>
+               </ul>
+               <div class="block-content text-center">
+                  <a class="btn btn-primary with-ico uppercase mt-5 " href="https://twitter.com/loscampeonesfm" target="_blank">
+                  Enterate de más Noticias</a>
+               </div>
+            </div>
+            <!--End container-->
+         </section>
+         <!--End news section-->
+ 
+         <!--Contact section-->
+         <section id="contact" class="contact main bg-secondary">
+            <!--Container-->
+            <div class="container">
+               <!--Row-->
+               <div class="row justify-content-center ">
+                  <div class="col-12 col-md-10 col-lg-9">
+                     <div class="block-content  gap-one-bottom-md text-center">
+                        <div class="block-title ">
+                           <h1 class="uppercase">contactanos</h1>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!--End row-->
+            </div>
+            <!--End container-->
+            <!--Container-->
+            <div class="container">
+               <div class="row justify-content-center">
+                  <div class="col-12 col-lg-10">
+                     <ul class="feature-list feature-list-sm text-center row">
+                       <li class="col-md-6  col-lg-4">
+                           <div class="card text-center" >
+                              <div class="card-body">
+                                 <h2 class="uppercase ">PAUTAS</h2>
+                                 <p class="mb-0"><em class="uppercase h5 opc-70">William Montoya</em>
+                                    +57 (111)111-1111<br>
+                                    pautasg@loscampeonesfm.com
+                                 </p>
+                              </div>
+                           </div>
+                        </li> 
+                        <li class="col-md-6  col-lg-4">
+                           <div class="card text-center">
+                              <div class="card-body">
+                                 <h2 class="uppercase">Info</h2>
+                                 <p class="mb-0"><em class="uppercase h5 opc-70">Liliana Montoya</em>
+                                    +57 (111)111-1111<br>
+                                    info@mloscampeonesfm.com
+                                 </p>
+                              </div>
+                           </div>
+                        </li>
+                       <li class="col-md-6  col-lg-4">
+                           <div class="card text-center">
+                              <div class="card-body">
+                                 <h2 class="uppercase ">redes</h2>
+                                 <p class=" mb-0"><em class="uppercase h5 opc-70">daniela</em>
+                                    +57 (111)111-1111<br>
+                                    redes@loscampeonesfm.com
+                                 </p>
+                              </div>
+                           </div>
+                        </li> 
+                     </ul>
+                  </div>
+               </div>
+
+               <div class="row justify-content-center">
+                  <div class="col-12">
+                     <ul class="block-social list-inline text-center mt-4">
+                        <li class="list-inline-item">
+                           <a href="https://www.facebook.com/campeonesdeunivalle" target="_blank"> <i class="socicon-facebook"></i> </a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a href="https://twitter.com/loscampeonesfm" target="_blank"><i class="socicon-instagram"></i> </a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a href="https://twitter.com/LosCampeonesFM" target="_blank"><i class="socicon-twitter"></i> </a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a href="https://www.youtube.com/@loscampeonesdeunivalleeste1969" target="_blank"><i class="socicon-youtube"></i> </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+
+            </div>
+            <!--End container-->
+         </section>
+         <!--End contact section-->  
+         <footer class="pt-5 pb-5 footer">
+            <!--Container-->
+            <div class="container">
+               <div class="row justify-content-between align-items-center">
+                  <div class="col-md-6">
+                     <small class="small"><span>&copy; 2023 all rights reserved <br> </span> Los Campeones FM</small>
+                  </div>
+                  <div class="col-md-6 text-md-right">
+                     <ul class="list-inline small">
+                        <li class="list-inline-item">
+                           <a href="politicasdeprivacidad.html" target="_blank">Politicas de Privacidad</a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a href="terminosdeuso.HTML">Terminos de Uso</a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a href="#">About</a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a href="#">Legal</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <!--End container-->
+         </footer>
+         <a class="block-top scroll" href="#wrapper">
+         <i class="icon-angle-up"></i></a>
+      </div>
+      <!-- End wrapper-->
+      <!--Javascript--> 
+      <script src="js/jquery-1.12.4.min.js"></script>
+      <script src="js/jquery.flexslider-min.js"></script>
+      <script src="js/smooth-scroll.js" ></script>
+      <script src="js/jquery.magnific-popup.min.js" ></script>
+      <script src="js/audio.min.js" ></script>
+      <script src="js/twitterFetcher_min.js" ></script>
+      <script src="js/jquery.countdown.min.js" ></script>
+      <script src="js/placeholders.min.js"></script>
+      <script src="js/script.js"></script>
+      <!-- Google analytics -->
+      <!-- End google analytics -->
+   </body>
+</html>
+
