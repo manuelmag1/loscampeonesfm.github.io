@@ -267,7 +267,7 @@ Created by : mutationthemes
     display: flex;
     animation: scroll 25s linear infinite;
     -webkit-animation: scroll 25s linear infinite;
-    width: calc(200px * 14);
+    width: calc(200px * 12);
 }
 
 .slider2 .slide2 {
@@ -285,8 +285,8 @@ Created by : mutationthemes
     }
 
     100%{
-        -webkit-transform: translatex(calc(-200px * 7));
-        transform: translate(calc(-200px * 7));
+        -webkit-transform: translatex(calc(-200px * 4));
+        transform: translate(calc(-200px * 4));
     }
 }
 
