@@ -265,8 +265,8 @@ Created by : mutationthemes
 
 .slider2 .slide2-track {
     display: flex;
-    animation: scroll 25s linear infinite;
-    -webkit-animation: scroll 25s linear infinite;
+    animation: scroll 20s linear infinite;
+    -webkit-animation: scroll 20s linear infinite;
     width: calc(200px * 12);
 }
 
