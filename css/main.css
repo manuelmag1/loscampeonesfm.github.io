@@ -251,6 +251,10 @@
     width: 100%;
 }
 
+.slide2:hover{
+    transform: scale(1.1);
+}
+
 @keyframes scroll {
     0%{
         -webkit-transform: translatex(0);
