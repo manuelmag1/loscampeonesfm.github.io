@@ -73,39 +73,39 @@
 
 
 
-// Cambio HORA en html
+// // Cambio HORA en html
 
-let intervalId = null;
+// let intervalId = null;
 
-      function updateLiveStatus() {    
-// Obtener la hora actual en Colombia
-  const now = new Date().toLocaleString("en-US", {timeZone: "America/Bogota"});
-  const hour = parseInt(now.split(" ")[1].split(":")[0]);
-  const minute = parseInt(now.split(" ")[1].split(":")[1]);
-  const amPm = now.split(" ")[2];
+//       function updateLiveStatus() {    
+// // Obtener la hora actual en Colombia
+//   const now = new Date().toLocaleString("en-US", {timeZone: "America/Bogota"});
+//   const hour = parseInt(now.split(" ")[1].split(":")[0]);
+//   const minute = parseInt(now.split(" ")[1].split(":")[1]);
+//   const amPm = now.split(" ")[2];
 
 
- // Si es la hora deseada, cambiar el texto y la imagen
-  if (hour === 11 && minute === 00 && amPm === "PM") {
-    const live = document.getElementById("live");
-    live.innerText = "FINALIZADO";
-    const img = document.getElementById("vs");
-    img.src = "../img/vs2.png";
+//  // Si es la hora deseada, cambiar el texto y la imagen
+//   if (hour === 5 && minute === 00 && amPm === "AM") {
+//     const live = document.getElementById("live");
+//     live.innerText = "5:30 pm";
+//     const img = document.getElementById("vs");
+//     img.src = "../img/vs1.png";
+//     clearInterval(intervalId);
+//   }
+
+// //   if (hour === 11 && minute=== 59 && amPm === "PM" ){
+
+// //     const postLive = document.getElementById("live");
+// //     postLive.innerText = "5:30 pm";
+// //     const postImg = document.getElementById ("vs");
+// //     postImg.src = "../img/vs1.png";
     
-  }
 
-  if (hour === 11 && minute=== 59 && amPm === "PM" ){
+// //   }
+// }
 
-    const postLive = document.getElementById("live");
-    postLive.innerText = "5:30 pm";
-    const postImg = document.getElementById ("vs");
-    postImg.src = "../img/vs1.png";
-    clearInterval(intervalId);
-
-  }
-}
-
-intervalId = setInterval(updateLiveStatus, 1000);
+// intervalId = setInterval(updateLiveStatus, 1000);
 
 
     // Audio Player
