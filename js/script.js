@@ -83,8 +83,6 @@ let intervalId = null;
   const hour = parseInt(now.split(" ")[1].split(":")[0]);
   const minute = parseInt(now.split(" ")[1].split(":")[1]);
   const amPm = now.split(" ")[2];
-    
-  console.log (now);
 
 
  // Si es la hora deseada, cambiar el texto y la imagen
