@@ -86,7 +86,7 @@ let intervalId = null;
 
 
  // Si es la hora deseada, cambiar el texto y la imagen
-  if (hour === 10 && minute === 30 && amPm === "PM") {
+  if (hour === 11 && minute === 00 && amPm === "PM") {
     const live = document.getElementById("live");
     live.innerText = "FINALIZADO";
     const img = document.getElementById("vs");
