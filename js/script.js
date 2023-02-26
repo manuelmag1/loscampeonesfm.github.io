@@ -81,21 +81,67 @@
      const hour = parseInt(now.split(" ")[1].split(":")[0]);
      const minute = parseInt(now.split(" ")[1].split(":")[1]);
      const amPm = now.split(" ")[2];
+
+     if (`${hour}:${minute}:${amPm}` < "5:50:PM") {
+        const live = document.getElementById("live");
+        live.innerText = "5:50 PM";
+      }
    
-     switch (`${hour}:${minute}:${amPm}`) {
-       case "8:30:PM":
-         const live = document.getElementById("live");
-         live.innerText = "FINALIZADO";
-         const img = document.getElementById("vs");
-         img.src = "../img/vs1.png";
-         clearInterval(intervalId);
-         default:
-         break;
+     if (`${hour}:${minute}:${amPm}` >= "5:50:PM") {
+       const live = document.getElementById("live");
+       live.innerText = "EN VIVO";
+     }
+   
+     if (`${hour}:${minute}:${amPm}` >= "9:00:PM") {
+       const postLive = document.getElementById("live");
+       postLive.innerText = "FINALIZADO";
+       clearInterval(intervalId);
      }
    }
    
    intervalId = setInterval(updateLiveStatus, 1000);
    
+
+
+
+
+
+//    let intervalId = null;
+
+//    function updateLiveStatus() {
+//      const now = new Date().toLocaleString("en-US", { timeZone: "America/Bogota" });
+//      const hour = parseInt(now.split(" ")[1].split(":")[0]);
+//      const minute = parseInt(now.split(" ")[1].split(":")[1]);
+//      const amPm = now.split(" ")[2];
+
+//      console.log(now);
+   
+//      switch (`${hour}:${minute}:${amPm}`) {
+//        case "4:12:PM":
+//          const live = document.getElementById("live");
+//          live.innerText = "EN VIVO";
+//          break;
+
+//          case "4:13:PM":
+//             const postLive = document.getElementById("live");
+//             postLive.innerText = "FINALIZADO";
+//             default:
+//             break;
+//         }
+
+//     }
+    
+//     intervalId = setInterval(updateLiveStatus, 1000);
+    
+    // case "8:30:PM":
+    //     const postLive = document.getElementById("live");
+    //     postLive.innerText = "FINALIZADO";
+    //     const postImg = document.getElementById("vs");
+    //     postImg.src = "../img/vs1.png";
+    //     clearInterval(intervalId);
+    //     default:
+    //     break;
+    // }
 
 
 
