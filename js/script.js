@@ -73,7 +73,36 @@
 
 
 
-// // Cambio HORA en html
+   // Cambio HORA en html
+   let intervalId = null;
+
+   function updateLiveStatus() {
+     const now = new Date().toLocaleString("en-US", { timeZone: "America/Bogota" });
+     const hour = parseInt(now.split(" ")[1].split(":")[0]);
+     const minute = parseInt(now.split(" ")[1].split(":")[1]);
+     const amPm = now.split(" ")[2];
+
+     console.log(now);
+   
+     switch (`${hour}:${minute}:${amPm}`) {
+       case "8:30:PM":
+         const live = document.getElementById("live");
+         live.innerText = "FINALIZADO";
+         const img = document.getElementById("vs");
+         img.src = "../img/vs1.png";
+         clearInterval(intervalId);
+         default:
+         break;
+     }
+   }
+   
+   intervalId = setInterval(updateLiveStatus, 1000);
+   
+
+
+
+
+
 
 // let intervalId = null;
 
@@ -85,24 +114,31 @@
 //   const amPm = now.split(" ")[2];
 
 
-//  // Si es la hora deseada, cambiar el texto y la imagen
-//   if (hour === 5 && minute === 00 && amPm === "AM") {
-//     const live = document.getElementById("live");
-//     live.innerText = "5:30 pm";
-//     const img = document.getElementById("vs");
-//     img.src = "../img/vs1.png";
-//     clearInterval(intervalId);
+//  if (hour < 5 || (hour === 5 && minute < 0) || (hour === 5 && minute > 0 && amPm !== "AM")) {
+//     // Si la hora actual es antes de las 5:00 AM o es después de las 5:00 AM y ya ha pasado, salir sin hacer nada.
+//     return;
+//   } else {
+  
+//   // Si es la hora deseada, cambiar el texto y la imagen
+//   const live = document.getElementById("live");
+//   live.innerText = "5:30 pm";
+//   const img = document.getElementById("vs");
+//   img.src = "../img/vs1.png";
+  
 //   }
 
-// //   if (hour === 11 && minute=== 59 && amPm === "PM" ){
-
-// //     const postLive = document.getElementById("live");
-// //     postLive.innerText = "5:30 pm";
-// //     const postImg = document.getElementById ("vs");
-// //     postImg.src = "../img/vs1.png";
-    
-
-// //   }
+//   if (hour < 5 || (hour === 5 && minute < 0) || (hour === 5 && minute > 0 && amPm !== "AM")) {
+//     // Si la hora actual es antes de las 5:00 AM o es después de las 5:00 AM y ya ha pasado, salir sin hacer nada.
+//     return;
+//   } else {
+  
+//   // Si es la hora deseada, cambiar el texto y la imagen
+//   const live = document.getElementById("live");
+//   live.innerText = "5:30 pm";
+//   const img = document.getElementById("vs");
+//   img.src = "../img/vs1.png";
+//   clearInterval(intervalId);
+//   }
 // }
 
 // intervalId = setInterval(updateLiveStatus, 1000);
