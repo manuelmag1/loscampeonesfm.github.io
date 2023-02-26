@@ -81,8 +81,6 @@
      const hour = parseInt(now.split(" ")[1].split(":")[0]);
      const minute = parseInt(now.split(" ")[1].split(":")[1]);
      const amPm = now.split(" ")[2];
-
-     console.log(now);
    
      switch (`${hour}:${minute}:${amPm}`) {
        case "8:30:PM":
