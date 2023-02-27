@@ -73,33 +73,33 @@
 
 
 
-   // Cambio HORA en html
-   let intervalId = null;
+//    // Cambio HORA en html
+//    let intervalId = null;
 
-   function updateLiveStatus() {
-     const now = new Date().toLocaleString("en-US", { timeZone: "America/Bogota" });
-     const hour = parseInt(now.split(" ")[1].split(":")[0]);
-     const minute = parseInt(now.split(" ")[1].split(":")[1]);
-     const amPm = now.split(" ")[2];
+//    function updateLiveStatus() {
+//      const now = new Date().toLocaleString("en-US", { timeZone: "America/Bogota" });
+//      const hour = parseInt(now.split(" ")[1].split(":")[0]);
+//      const minute = parseInt(now.split(" ")[1].split(":")[1]);
+//      const amPm = now.split(" ")[2];
 
-     if (`${hour}:${minute}:${amPm}` < "5:50:PM") {
-        const live = document.getElementById("live");
-        live.innerText = "5:50 PM";
-      }
+//      if (`${hour}:${minute}:${amPm}` < "5:50:PM") {
+//         const live = document.getElementById("live");
+//         live.innerText = "5:50 PM";
+//       }
    
-     if (`${hour}:${minute}:${amPm}` >= "5:50:PM") {
-       const live = document.getElementById("live");
-       live.innerText = "EN VIVO";
-     }
+//      if (`${hour}:${minute}:${amPm}` >= "5:50:PM") {
+//        const live = document.getElementById("live");
+//        live.innerText = "EN VIVO";
+//      }
    
-     if (`${hour}:${minute}:${amPm}` >= "9:00:PM") {
-       const postLive = document.getElementById("live");
-       postLive.innerText = "FINALIZADO";
-       clearInterval(intervalId);
-     }
-   }
+//      if (`${hour}:${minute}:${amPm}` >= "9:00:PM") {
+//        const postLive = document.getElementById("live");
+//        postLive.innerText = "FINALIZADO";
+//        clearInterval(intervalId);
+//      }
+//    }
    
-   intervalId = setInterval(updateLiveStatus, 1000);
+//    intervalId = setInterval(updateLiveStatus, 1000);
    
 
 
