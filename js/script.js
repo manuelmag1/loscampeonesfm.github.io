@@ -68,32 +68,34 @@
     });
 
   // Cambio HORA en html
-  //    let intervalId = null;
+     let intervalId = null;
 
-  //    function updateLiveStatus() {
-  //      const now = new Date().toLocaleString("en-US", { timeZone: "America/Bogota" });
-  //      const hour = parseInt(now.split(" ")[1].split(":")[0]);
-  //      const minute = parseInt(now.split(" ")[1].split(":")[1]);
-  //      const amPm = now.split(" ")[2];
+     function updateLiveStatus() {
+       const now = new Date().toLocaleString("en-US", {
+         timeZone: "America/Bogota",
+       });
+       const hour = parseInt(now.split(" ")[1].split(":")[0]);
+       const minute = parseInt(now.split(" ")[1].split(":")[1]);
+       const amPm = now.split(" ")[2];
 
-  //      if (`${hour}:${minute}:${amPm}` < "1:00:PM") {
-  //         const live = document.getElementById("live");
-  //         live.innerText = "Lunes a Viernes \n \n  1:00 pm - 3:00 pm";
-  //       }
+       if (`${hour}:${minute}:${amPm}` < "1:00:PM") {
+         const live = document.getElementById("live");
+         live.innerText = "Lunes a Viernes \n \n  1:00 pm - 3:00 pm";
+       }
 
-  //      if (`${hour}:${minute}:${amPm}` >= "1:00:PM") {
-  //        const live = document.getElementById("live");
-  //        live.innerText = "EN VIVO";
-  //      }
+       if (`${hour}:${minute}:${amPm}` >= "1:00:PM") {
+         const live = document.getElementById("live");
+         live.innerText = "EN VIVO";
+       }
 
-  //      if (`${hour}:${minute}:${amPm}` >= "3:00:PM") {
-  //        const postLive = document.getElementById("live");
-  //        postLive.innerText = "Lunes a Viernes \n \n  1:00 pm - 3:00 pm";
-  //        clearInterval(intervalId);
-  //      }
-  //    }
+       if (`${hour}:${minute}:${amPm}` >= "3:00:PM") {
+         const postLive = document.getElementById("live");
+         postLive.innerText = "Lunes a Viernes \n \n  1:00 pm - 3:00 pm";
+         clearInterval(intervalId);
+       }
+     }
 
-  //    intervalId = setInterval(updateLiveStatus, 1000);
+     intervalId = setInterval(updateLiveStatus, 1000);
 
   //    let intervalId = null;
 
