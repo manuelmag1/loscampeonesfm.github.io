@@ -143,7 +143,7 @@
 
     if (`${hour}:${minute}:${amPm}` >= "3:00:PM") {
       const postLive = document.getElementById("live");
-      postLive.innerText = "3:00 pm";
+      postLive.innerText = "15 Marzo - 3:00 pm";
       // postLive.innerText = "Lunes a Viernes \n \n  1:00 pm - 3:00 pm";
       const vsImage = document.getElementById("vs");
       vsImage.style.display = "block";
