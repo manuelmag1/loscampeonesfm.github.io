@@ -134,7 +134,7 @@
       vsImage.style.display = "block";
     }
 
-    if (`${hour}:${minute}:${amPm}` >= "11:00:PM") {
+    if (`${hour}:${minute}:${amPm}` >= "11:00:AM") {
       const live = document.getElementById("live");
       live.innerText = "EN VIVO";
       const vsImage = document.getElementById("vs");
