@@ -127,24 +127,24 @@
     const minute = parseInt(now.split(" ")[1].split(":")[1]);
     const amPm = now.split(" ")[2];
 
-    if (`${hour}:${minute}:${amPm}` < "11:00:AM") {
+    if (`${hour}:${minute}:${amPm}` < "3:00:AM") {
       const live = document.getElementById("live");
       live.innerText = "3:00 pm";
       const vsImage = document.getElementById("vs");
       vsImage.style.display = "block";
     }
 
-    if (`${hour}:${minute}:${amPm}` >= "11:00:AM") {
+    if (`${hour}:${minute}:${amPm}` >= "3:00:AM") {
       const live = document.getElementById("live");
       live.innerText = "EN VIVO";
       const vsImage = document.getElementById("vs");
       vsImage.style.display = "block";
     }
 
-    if (`${hour}:${minute}:${amPm}` >= "3:00:PM") {
+    if (`${hour}:${minute}:${amPm}` >= "8:00:PM") {
       const postLive = document.getElementById("live");
-      postLive.innerText = "15 Marzo - 3:00 pm";
-      // postLive.innerText = "Lunes a Viernes \n \n  1:00 pm - 3:00 pm";
+      // postLive.innerText = "15 Marzo - 3:00 pm";
+      postLive.innerText = "Lunes a Viernes \n \n  1:00 pm - 3:00 pm";
       const vsImage = document.getElementById("vs");
       vsImage.style.display = "block";
       clearInterval(intervalId);
