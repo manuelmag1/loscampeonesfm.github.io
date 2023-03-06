@@ -131,7 +131,7 @@
       const live = document.getElementById("live");
       live.innerText = "3:00 pm";
       const vsImage = document.getElementById("vs");
-      vsImage.style.display = "block";
+      vsImage.style.display = "none";
     }
 
     if (`${hour}:${minute}:${amPm}` >= "3:00:AM") {
@@ -146,7 +146,7 @@
       // postLive.innerText = "15 Marzo - 3:00 pm";
       postLive.innerText = "Lunes a Viernes \n \n  1:00 pm - 3:00 pm";
       const vsImage = document.getElementById("vs");
-      vsImage.style.display = "block";
+      vsImage.style.display = "none";
       clearInterval(intervalId);
     }
   }
