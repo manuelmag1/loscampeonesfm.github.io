@@ -743,3 +743,115 @@
                  <li class="list-inline-item">
                     <a href="#"><i class="socicon-amazon"></i></a> 
                  </li>
+
+
+
+
+
+
+
+                 <!-- SECCION DE NOTICIAS -->
+
+
+                       <!--News section-->
+      <section id="noticias" class="news main bg-secondary">
+         <!--Container-->
+         <div class="container">
+           <!--Row-->
+           <div class="row justify-content-center">
+             <div class="col-12 col-md-10 col-lg-9">
+               <div class="block-content gap-one-bottom-md text-center">
+                 <div class="block-title">
+                   <h1 class="uppercase">Noticias</h1>
+                 </div>
+               </div>
+             </div>
+           </div>
+           <!--End row-->
+         </div>
+         <!--End container-->
+         <!--Container-->
+         <div class="container">
+           <ul class="news-list">
+             <!-- PRIMER POST -->
+             <li class="row align-items-center justify-content-around">
+               <div class="col-12 col-md-6 order-md-2">
+                 <div class="block-content">
+                   <a
+                     href="https://www.facebook.com/photo?fbid=660572762738657&set=a.520423170086951"
+                     target="_blank"
+                   >
+                     <img
+                       alt=""
+                       class="img-fluid animated"
+                       src="https://scontent-mad2-1.xx.fbcdn.net/v/t39.30808-6/333093448_885907179371217_1470183718683339057_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=rNEqGdQiMq0AX_XiGzq&_nc_ht=scontent-mad2-1.xx&oh=00_AfD9qIu0n-NZTxZ7IIakgDdIbWFP4B4yMSuH2YCRlGVjRA&oe=640407D9"
+                   /></a>
+                 </div>
+               </div>
+               <div class="col-12 col-md-6 col-lg-5 order-md-1">
+                 <div class="block-content text-left">
+                   <span class="mb-2 opc-70">Feb 28, 2023</span>
+                   <h2>Lionel Messi ganador del Premio FIFA</h2>
+                   <p class="lead">
+                     El argentino Lionel Messi es el ganador del Premio FIFA
+                     #TheBest al mejor futbolista del 2022.
+                     <a
+                       href="https://www.facebook.com/photo?fbid=660572762738657&set=a.520423170086951"
+                       target="_blank"
+                       >Leer Mas...›
+                     </a>
+                   </p>
+                 </div>
+               </div>
+             </li>
+             <!-- FINAL DEL PRIMER POST -->
+ 
+             <!-- SEGUNDO POST -->
+             <li class="row align-items-center justify-content-around">
+               <div class="col-12 col-md-6 order-1">
+                 <div class="block-content">
+                   <a
+                     href="https://www.facebook.com/photo?fbid=660555172740416&set=a.520423170086951"
+                     target="_blank"
+                     ><img
+                       alt=""
+                       class="img-fluid animated"
+                       src="https://scontent-mad2-1.xx.fbcdn.net/v/t39.30808-6/333287358_751205262973825_2705824866230305329_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=3IkhxX3kNKkAX_eqUik&_nc_ht=scontent-mad2-1.xx&oh=00_AfCrC1Q09Pddn2ibRIBuzHtxJGw2Q0FawBD8rB1_PefNnA&oe=64037F10"
+                   /></a>
+                 </div>
+               </div>
+               <!--end of col-->
+               <div class="col-12 col-md-6 col-lg-5 order-2 text-left">
+                 <div class="block-content text-left">
+                   <span class="mb-2 opc-70">Feb 27, 2023</span>
+                   <h2>Lionel Scaloni</h2>
+                   <p class="lead">
+                     Lionel Scaloni DT de AFA - Selección Argentina es el ganador
+                     del premio The Best como mejor entrenador de fútbol del
+                     Mundo.
+ 
+                     <a
+                       href="https://www.facebook.com/photo?fbid=660555172740416&set=a.520423170086951"
+                       target="_blank"
+                       >leer Más...›</a
+                     >
+                   </p>
+                 </div>
+               </div>
+               <!--end of col-->
+             </li>
+             <!-- FINAL DEL SEGUNDO POST-->
+           </ul>
+           <div class="block-content text-center">
+             <a
+               class="btn btn-primary with-ico uppercase mt-5"
+               href="https://twitter.com/loscampeonesfm"
+               target="_blank"
+             >
+               Enterate de más Noticias</a
+             >
+           </div>
+         </div>
+         <!--End container-->
+       </section>
+       <!--End news section-->
