@@ -264,7 +264,7 @@
            live.innerText = "EN VIVO";
          }
 
-         if (`${hour}:${minute}:${amPm}` >= "6:00:PM") {
+         if (`${hour}:${minute}:${amPm}` >= "6:30:PM") {
            const postLive = document.getElementById("live");
            postLive.innerText = "FINALIZADO";
            clearInterval(intervalId);
