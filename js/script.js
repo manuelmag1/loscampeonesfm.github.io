@@ -243,6 +243,36 @@
 
   // intervalId = setInterval(updateLiveStatus, 1000);
 
+
+       let intervalId = null;
+
+       function updateLiveStatus() {
+         const now = new Date().toLocaleString("en-US", {
+           timeZone: "America/Bogota",
+         });
+         const hour = parseInt(now.split(" ")[1].split(":")[0]);
+         const minute = parseInt(now.split(" ")[1].split(":")[1]);
+         const amPm = now.split(" ")[2];
+
+         if (`${hour}:${minute}:${amPm}` < "3:00:PM") {
+           const live = document.getElementById("live");
+           live.innerText = "3:00 PM";
+         }
+
+         if (`${hour}:${minute}:${amPm}` >= "3:00:PM") {
+           const live = document.getElementById("live");
+           live.innerText = "EN VIVO";
+         }
+
+         if (`${hour}:${minute}:${amPm}` >= "6:00:PM") {
+           const postLive = document.getElementById("live");
+           postLive.innerText = "FINALIZADO";
+           clearInterval(intervalId);
+         }
+       }
+
+       intervalId = setInterval(updateLiveStatus, 1000);
+
   // Audio Player
 
   const audioPlayer = document.getElementById("audio-player");
