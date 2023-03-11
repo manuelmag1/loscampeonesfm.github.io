@@ -68,61 +68,14 @@
     });
 
   // Cambio HORA en html
-  let intervalId = null;
+  // let intervalId = null;
 
-  function isWeekday() {
-    const now = new Date().toLocaleString("en-US", {
-      timeZone: "America/Bogota",
-    });
-    const dayOfWeek = new Date(now).getDay();
-    return dayOfWeek > 0 && dayOfWeek < 6;
-  }
-
-  function updateLiveStatus() {
-    const now = new Date().toLocaleString("en-US", {
-      timeZone: "America/Bogota",
-    });
-    const hour = parseInt(now.split(" ")[1].split(":")[0]);
-    const minute = parseInt(now.split(" ")[1].split(":")[1]);
-    const amPm = now.split(" ")[2];
-
-    if (`${hour}:${minute}:${amPm}` < "1:00:PM") {
-      const live = document.getElementById("live");
-      live.innerText = "Lunes a Viernes \n \n  1:00 pm - 3:00 pm";
-      const vsImage = document.getElementById("vs");
-      vsImage.style.display = "none";
-    }
-
-    if (`${hour}:${minute}:${amPm}` >= "1:00:PM") {
-      const live = document.getElementById("live");
-      live.innerText = "EN VIVO";
-      const vsImage = document.getElementById("vs");
-      vsImage.style.display = "none";
-    }
-
-    if (`${hour}:${minute}:${amPm}` >= "3:00:PM") {
-      const postLive = document.getElementById("live");
-      postLive.innerText = "Lunes a Viernes \n \n  1:00 pm - 3:00 pm";
-      const vsImage = document.getElementById("vs");
-      vsImage.style.display = "none";
-      clearInterval(intervalId);
-    }
-  }
-
-  if (isWeekday()) {
-    const vsImage = document.getElementById("vs");
-    vsImage.style.display = "none";
-    intervalId = setInterval(updateLiveStatus, 1000);
-  }
-
-  // FIN DE SEMANA
-
-  // function isWeekend() {
+  // function isWeekday() {
   //   const now = new Date().toLocaleString("en-US", {
   //     timeZone: "America/Bogota",
   //   });
   //   const dayOfWeek = new Date(now).getDay();
-  //   return dayOfWeek === 0 || dayOfWeek === 6;
+  //   return dayOfWeek > 0 && dayOfWeek < 6;
   // }
 
   // function updateLiveStatus() {
@@ -133,23 +86,22 @@
   //   const minute = parseInt(now.split(" ")[1].split(":")[1]);
   //   const amPm = now.split(" ")[2];
 
-  //   if (`${hour}:${minute}:${amPm}` < "3:00:AM") {
+  //   if (`${hour}:${minute}:${amPm}` < "1:00:PM") {
   //     const live = document.getElementById("live");
-  //     live.innerText = "3:00 pm";
+  //     live.innerText = "Lunes a Viernes \n \n  1:00 pm - 3:00 pm";
   //     const vsImage = document.getElementById("vs");
   //     vsImage.style.display = "none";
   //   }
 
-  //   if (`${hour}:${minute}:${amPm}` >= "3:00:AM") {
+  //   if (`${hour}:${minute}:${amPm}` >= "1:00:PM") {
   //     const live = document.getElementById("live");
   //     live.innerText = "EN VIVO";
   //     const vsImage = document.getElementById("vs");
-  //     vsImage.style.display = "block";
+  //     vsImage.style.display = "none";
   //   }
 
-  //   if (`${hour}:${minute}:${amPm}` >= "6:00:PM") {
+  //   if (`${hour}:${minute}:${amPm}` >= "3:00:PM") {
   //     const postLive = document.getElementById("live");
-  //     // postLive.innerText = "15 Marzo - 3:00 pm";
   //     postLive.innerText = "Lunes a Viernes \n \n  1:00 pm - 3:00 pm";
   //     const vsImage = document.getElementById("vs");
   //     vsImage.style.display = "none";
@@ -157,84 +109,57 @@
   //   }
   // }
 
-  // if (isWeekend()) {
+  // if (isWeekday()) {
+  //   const vsImage = document.getElementById("vs");
+  //   vsImage.style.display = "none";
   //   intervalId = setInterval(updateLiveStatus, 1000);
   // }
 
-  //    let intervalId = null;
+  // FIN DE SEMANA
 
-  //    function updateLiveStatus() {
-  //      const now = new Date().toLocaleString("en-US", { timeZone: "America/Bogota" });
-  //      const hour = parseInt(now.split(" ")[1].split(":")[0]);
-  //      const minute = parseInt(now.split(" ")[1].split(":")[1]);
-  //      const amPm = now.split(" ")[2];
+  function isWeekend() {
+    const now = new Date().toLocaleString("en-US", {
+      timeZone: "America/Bogota",
+    });
+    const dayOfWeek = new Date(now).getDay();
+    return dayOfWeek === 0 || dayOfWeek === 6;
+  }
 
-  //      console.log(now);
+  function updateLiveStatus() {
+    const now = new Date().toLocaleString("en-US", {
+      timeZone: "America/Bogota",
+    });
+    const hour = parseInt(now.split(" ")[1].split(":")[0]);
+    const minute = parseInt(now.split(" ")[1].split(":")[1]);
+    const amPm = now.split(" ")[2];
 
-  //      switch (`${hour}:${minute}:${amPm}`) {
-  //        case "4:12:PM":
-  //          const live = document.getElementById("live");
-  //          live.innerText = "EN VIVO";
-  //          break;
+    if (`${hour}:${minute}:${amPm}` < "3:00:PM") {
+      const live = document.getElementById("live");
+      live.innerText = "3:00 pm";
+      const vsImage = document.getElementById("vs");
+      vsImage.style.display = "block";
+    }
 
-  //          case "4:13:PM":
-  //             const postLive = document.getElementById("live");
-  //             postLive.innerText = "FINALIZADO";
-  //             default:
-  //             break;
-  //         }
+    if (`${hour}:${minute}:${amPm}` >= "3:00:PM") {
+      const live = document.getElementById("live");
+      live.innerText = "EN VIVO";
+      const vsImage = document.getElementById("vs");
+      vsImage.style.display = "block";
+    }
 
-  //     }
+    if (`${hour}:${minute}:${amPm}` >= "6:00:PM") {
+      const postLive = document.getElementById("live");
+      // postLive.innerText = "15 Marzo - 3:00 pm";
+      postLive.innerText = "FINALIZADO";
+      const vsImage = document.getElementById("vs");
+      vsImage.style.display = "block";
+      clearInterval(intervalId);
+    }
+  }
 
-  //     intervalId = setInterval(updateLiveStatus, 1000);
-
-  // case "8:30:PM":
-  //     const postLive = document.getElementById("live");
-  //     postLive.innerText = "FINALIZADO";
-  //     const postImg = document.getElementById("vs");
-  //     postImg.src = "../img/vs1.png";
-  //     clearInterval(intervalId);
-  //     default:
-  //     break;
-  // }
-
-  // let intervalId = null;
-
-  //       function updateLiveStatus() {
-  // // Obtener la hora actual en Colombia
-  //   const now = new Date().toLocaleString("en-US", {timeZone: "America/Bogota"});
-  //   const hour = parseInt(now.split(" ")[1].split(":")[0]);
-  //   const minute = parseInt(now.split(" ")[1].split(":")[1]);
-  //   const amPm = now.split(" ")[2];
-
-  //  if (hour < 5 || (hour === 5 && minute < 0) || (hour === 5 && minute > 0 && amPm !== "AM")) {
-  //     // Si la hora actual es antes de las 5:00 AM o es después de las 5:00 AM y ya ha pasado, salir sin hacer nada.
-  //     return;
-  //   } else {
-
-  //   // Si es la hora deseada, cambiar el texto y la imagen
-  //   const live = document.getElementById("live");
-  //   live.innerText = "5:30 pm";
-  //   const img = document.getElementById("vs");
-  //   img.src = "../img/vs1.png";
-
-  //   }
-
-  //   if (hour < 5 || (hour === 5 && minute < 0) || (hour === 5 && minute > 0 && amPm !== "AM")) {
-  //     // Si la hora actual es antes de las 5:00 AM o es después de las 5:00 AM y ya ha pasado, salir sin hacer nada.
-  //     return;
-  //   } else {
-
-  //   // Si es la hora deseada, cambiar el texto y la imagen
-  //   const live = document.getElementById("live");
-  //   live.innerText = "5:30 pm";
-  //   const img = document.getElementById("vs");
-  //   img.src = "../img/vs1.png";
-  //   clearInterval(intervalId);
-  //   }
-  // }
-
-  // intervalId = setInterval(updateLiveStatus, 1000);
+  if (isWeekend()) {
+    intervalId = setInterval(updateLiveStatus, 1000);
+  }
 
   // Audio Player
 
