@@ -75,7 +75,7 @@
       timeZone: "America/Bogota",
     });
     const dayOfWeek = new Date(now).getDay();
-    return dayOfWeek > 0 && dayOfWeek < 6;
+    return dayOfWeek > 1 && dayOfWeek < 6;
   }
 
   function updateLiveStatus() {
@@ -88,23 +88,23 @@
 
     if (`${hour}:${minute}:${amPm}` < "1:00:PM") {
       const live = document.getElementById("live");
-      live.innerText = "Lunes a Viernes \n \n  1:00 pm - 3:00 pm";
-      const vsImage = document.getElementById("vs");
-      vsImage.style.display = "none";
+      live.innerText = "LUNES A VIERNES \n \n  1:00 PM - 3:00 PM";
+      // const vsImage = document.getElementById("vs");
+      // vsImage.style.display = "none";
     }
 
     if (`${hour}:${minute}:${amPm}` >= "1:00:PM") {
       const live = document.getElementById("live");
       live.innerText = "EN VIVO";
-      const vsImage = document.getElementById("vs");
-      vsImage.style.display = "none";
+      // const vsImage = document.getElementById("vs");
+      // vsImage.style.display = "none";
     }
 
     if (`${hour}:${minute}:${amPm}` >= "3:00:PM") {
       const postLive = document.getElementById("live");
-      postLive.innerText = "Lunes a Viernes \n \n  1:00 pm - 3:00 pm";
-      const vsImage = document.getElementById("vs");
-      vsImage.style.display = "none";
+      postLive.innerText = "LUNES A VIERNES \n \n  1:00 pm - 3:00 pm";
+      // const vsImage = document.getElementById("vs");
+      // vsImage.style.display = "none";
       clearInterval(intervalId);
     }
   }
