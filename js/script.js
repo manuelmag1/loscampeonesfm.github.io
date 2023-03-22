@@ -67,30 +67,62 @@
       mainHeroResize();
     });
 
-  // Cambio HORA en html
+  // HORA SEMANA
 
-  function updateLiveText() {
-    const now = new Date().toLocaleString("es-CO", {
-      timeZone: "America/Bogota",
-    });
-    const [date, time] = now.split(", ");
+  // function updateLiveText() {
+  //   const now = new Date().toLocaleString("es-CO", {
+  //     timeZone: "America/Bogota",
+  //   });
+  //   const [date, time] = now.split(", ");
 
-    const startHour = "13:00";
-    const endHour = "15:00";
+  //   const startHour = "13:00";
+  //   const endHour = "15:00";
 
-    if (time >= startHour && time <= endHour) {
-      document.getElementById("live").innerHTML = "EN VIVO";
-      const vsImage = document.getElementById("vs");
-      vsImage.style.display = "none";
-    } else {
-      document.getElementById("live").innerHTML =
-        "LUNES A VIERNES <br> 1:00 PM - 3:00 PM";
-      const vsImage = document.getElementById("vs");
-      vsImage.style.display = "none";
-    }
-  }
+  //   if (time >= startHour && time <= endHour) {
+  //     document.getElementById("live").innerHTML = "EN VIVO";
+  //     const vsImage = document.getElementById("vs");
+  //     vsImage.style.display = "none";
+  //   } else {
+  //     document.getElementById("live").innerHTML =
+  //       "LUNES A VIERNES <br> 1:00 PM - 3:00 PM";
+  //     const vsImage = document.getElementById("vs");
+  //     vsImage.style.display = "none";
+  //   }
+  // }
 
-  setInterval(updateLiveText, 1000);
+  // setInterval(updateLiveText, 1000);
+
+  // let intervalId = null;
+  // function updateLiveStatus() {
+  //   const now = new Date().toLocaleString("en-US", {
+  //     timeZone: "America/Bogota",
+  //   });
+  //   const hour = parseInt(now.split(" ")[1].split(":")[0]);
+  //   const minute = parseInt(now.split(" ")[1].split(":")[1]);
+  //   const amPm = now.split(" ")[2];
+
+  //   console.log(hour);
+  //   console.log(minute);
+  //   console.log(amPm);
+
+  //   if (hour > 10 && minute < 00 && amPm === "AM") {
+  //     const live = document.getElementById("live");
+  //     live.innerText = "MENOR A 10";
+  //   }
+
+  //   if (`${hour}:${minute}:${amPm}` >= "1:00:PM") {
+  //     const live = document.getElementById("live");
+  //     live.innerText = "EN VIVO";
+  //   }
+
+  //   if (`${hour}:${minute}:${amPm}` >= "3:00:PM") {
+  //     const postLive = document.getElementById("live");
+  //     postLive.innerText = "Lune a Viernes \n \n  1:00 pm - 3:00 pm";
+  //     clearInterval(intervalId);
+  //   }
+  // }
+
+  // intervalId = setInterval(updateLiveStatus, 1000);
 
   // Audio Player
 
