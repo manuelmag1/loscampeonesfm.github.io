@@ -69,24 +69,28 @@
 
   // Cambio HORA en html
 
-  const now = new Date().toLocaleString("es-CO", {
-    timeZone: "America/Bogota",
-  });
-  const [date, time] = now.split(", ");
+  function updateLiveText() {
+    const now = new Date().toLocaleString("es-CO", {
+      timeZone: "America/Bogota",
+    });
+    const [date, time] = now.split(", ");
 
-  const startHour = "13:00";
-  const endHour = "15:00";
+    const startHour = "13:00";
+    const endHour = "15:00";
 
-  if (time >= startHour && time <= endHour) {
-    document.getElementById("live").innerHTML = "EN VIVO";
-    const vsImage = document.getElementById("vs");
-    vsImage.style.display = "none";
-  } else {
-    document.getElementById("live").innerHTML =
-      "LUNES A VIERNES <br> 1:00 PM - 3:00 PM";
-    const vsImage = document.getElementById("vs");
-    vsImage.style.display = "none";
+    if (time >= startHour && time <= endHour) {
+      document.getElementById("live").innerHTML = "EN VIVO";
+      const vsImage = document.getElementById("vs");
+      vsImage.style.display = "none";
+    } else {
+      document.getElementById("live").innerHTML =
+        "LUNES A VIERNES <br> 1:00 PM - 3:00 PM";
+      const vsImage = document.getElementById("vs");
+      vsImage.style.display = "none";
+    }
   }
+
+  setInterval(updateLiveText, 1000);
 
   // Audio Player
 
