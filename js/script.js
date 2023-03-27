@@ -76,7 +76,7 @@
     const [date, time] = now.split(", ");
 
     const startHour = "1:00";
-    const endHour = "1:01";
+    const endHour = "7:00";
 
     if (time >= startHour && time <= endHour) {
       document.getElementById("live").innerHTML = "EN VIVO";
