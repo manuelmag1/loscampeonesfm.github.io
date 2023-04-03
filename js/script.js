@@ -106,7 +106,7 @@
       vsImage.style.display = "block";
     } else {
       document.getElementById("live").innerHTML =
-        "3:00 PM";
+        "7:30 PM";
       const vsImage = document.getElementById("vs");
       vsImage.style.display = "block";
     }
