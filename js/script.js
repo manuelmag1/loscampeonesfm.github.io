@@ -97,7 +97,7 @@
     });
     const [date, time] = now.split(", ");
 
-    const startHour = "19:30";
+    const startHour = "7:30";
     const endHour = "10:00";
 
     if (time >= startHour && time <= endHour) {
