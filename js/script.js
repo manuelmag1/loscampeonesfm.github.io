@@ -106,7 +106,7 @@
       vsImage.style.display = "block";
     } else {
       document.getElementById("live").innerHTML =
-        "7:30 PM";
+        "EN VIVO";
       const vsImage = document.getElementById("vs");
       vsImage.style.display = "block";
     }
