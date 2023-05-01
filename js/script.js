@@ -75,18 +75,18 @@
     });
     const [date, time] = now.split(", ");
 
-    const startHour = "3:00";
-    const endHour = "9:00";
+    const startHour = "1:00";
+    const endHour = "3:00";
 
     if (time >= startHour && time <= endHour) {
       document.getElementById("live").innerHTML = "EN VIVO";
       const vsImage = document.getElementById("vs");
-      vsImage.style.display = "block";
+      vsImage.style.display = "none";
     } else {
       document.getElementById("live").innerHTML =
-        "EN VIVO";
+        "LUNES A VIERNES <br> 1:00 PM - 3:00 PM";
       const vsImage = document.getElementById("vs");
-      vsImage.style.display = "block";
+      vsImage.style.display = "none";
     }
   }
 
