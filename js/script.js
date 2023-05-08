@@ -91,28 +91,65 @@
   // }
 
 //  HORA DE PARTIDO
-  function updateLiveText() {
-    const now = new Date().toLocaleString("es-CO", {
-      timeZone: "America/Bogota",
-    });
-    const [date, time] = now.split(", ");
+  // function updateLiveText() {
+  //   const now = new Date().toLocaleString("es-CO", {
+  //     timeZone: "America/Bogota",
+  //   });
+  //   const [date, time] = now.split(", ");
 
-    const startHour = "5:15";
-    const endHour = "8:00";
+  //   const startHour = "5:15";
+  //   const endHour = "8:00";
 
-    if (time >= startHour && time <= endHour) {
-      document.getElementById("live").innerHTML = "EN VIVO";
-      const vsImage = document.getElementById("vs");
-      vsImage.style.display = "block";
-    } else {
-      document.getElementById("live").innerHTML =
-        "5:15 PM";
-      const vsImage = document.getElementById("vs");
-      vsImage.style.display = "block";
-    }
+  //   if (time >= startHour && time <= endHour) {
+  //     document.getElementById("live").innerHTML = "EN VIVO";
+  //     const vsImage = document.getElementById("vs");
+  //     vsImage.style.display = "block";
+  //   } else {
+  //     document.getElementById("live").innerHTML =
+  //       "5:15 PM";
+  //     const vsImage = document.getElementById("vs");
+  //     vsImage.style.display = "block";
+  //   }
+  // }
+
+  // setInterval(updateLiveText, 1000);
+
+
+// ADICIONAL FUNCIONANDO
+
+function updateLiveText() {
+  const now = new Date().toLocaleString("es-CO", {
+    timeZone: "America/Bogota",
+  });
+  const [date, time] = now.split(", ");
+
+  const startHour = "5:15";
+  const endHour = "8:00";
+
+  if (time >= startHour && time <= endHour) {
+    document.getElementById("live").innerHTML = "EN VIVO";
+    const vsImage = document.getElementById("vs");
+    vsImage.style.display = "block";
+  } else if (time > endHour) {
+    // ejecutar updateLiveInWeek() sin detener el intervalo
+    updateLiveInWeek();
+  } else {
+    document.getElementById("live").innerHTML = "5:15 PM";
+    const vsImage = document.getElementById("vs");
+    vsImage.style.display = "block";
   }
+}
 
-  setInterval(updateLiveText, 1000);
+function updateLiveInWeek() {
+  const vsImage = document.getElementById("vs");
+  vsImage.setAttribute("src", "img/vs2.png");
+}
+
+// iniciar el intervalo
+setInterval(updateLiveText, 1000);
+
+
+
 
   // Audio Player
 
