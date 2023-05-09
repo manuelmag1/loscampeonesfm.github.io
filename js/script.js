@@ -69,26 +69,26 @@
 
   // HORA SEMANA
 
-  // function updateLiveText() {
-  //   const now = new Date().toLocaleString("es-CO", {
-  //     timeZone: "America/Bogota",
-  //   });
-  //   const [date, time] = now.split(", ");
+  function updateLiveText() {
+    const now = new Date().toLocaleString("es-CO", {
+      timeZone: "America/Bogota",
+    });
+    const [date, time] = now.split(", ");
 
-  //   const startHour = "1:00";
-  //   const endHour = "3:00";
+    const startHour = "1:00";
+    const endHour = "3:00";
 
-  //   if (time >= startHour && time <= endHour) {
-  //     document.getElementById("live").innerHTML = "EN VIVO";
-  //     const vsImage = document.getElementById("vs");
-  //     vsImage.style.display = "none";
-  //   } else {
-  //     document.getElementById("live").innerHTML =
-  //       "LUNES A VIERNES <br> 1:00 PM - 3:00 PM";
-  //     const vsImage = document.getElementById("vs");
-  //     vsImage.style.display = "none";
-  //   }
-  // }
+    if (time >= startHour && time <= endHour) {
+      document.getElementById("live").innerHTML = "EN VIVO";
+      const vsImage = document.getElementById("vs");
+      vsImage.style.display = "none";
+    } else {
+      document.getElementById("live").innerHTML =
+        "LUNES A VIERNES <br> 1:00 PM - 3:00 PM";
+      const vsImage = document.getElementById("vs");
+      vsImage.style.display = "none";
+    }
+  }
 
 //  HORA DE PARTIDO
   // function updateLiveText() {
@@ -117,36 +117,36 @@
 
 // ADICIONAL FUNCIONANDO
 
-function updateLiveText() {
-  const now = new Date().toLocaleString("es-CO", {
-    timeZone: "America/Bogota",
-  });
-  const [date, time] = now.split(", ");
+// function updateLiveText() {
+//   const now = new Date().toLocaleString("es-CO", {
+//     timeZone: "America/Bogota",
+//   });
+//   const [date, time] = now.split(", ");
 
-  const startHour = "5:15";
-  const endHour = "8:00";
+//   const startHour = "5:15";
+//   const endHour = "8:00";
 
-  if (time >= startHour && time <= endHour) {
-    document.getElementById("live").innerHTML = "EN VIVO";
-    const vsImage = document.getElementById("vs");
-    vsImage.style.display = "block";
-  } else if (time > endHour) {
-    // ejecutar updateLiveInWeek() sin detener el intervalo
-    updateLiveInWeek();
-  } else {
-    document.getElementById("live").innerHTML = "5:15 PM";
-    const vsImage = document.getElementById("vs");
-    vsImage.style.display = "block";
-  }
-}
+//   if (time >= startHour && time <= endHour) {
+//     document.getElementById("live").innerHTML = "EN VIVO";
+//     const vsImage = document.getElementById("vs");
+//     vsImage.style.display = "block";
+//   } else if (time > endHour) {
+//     // ejecutar updateLiveInWeek() sin detener el intervalo
+//     updateLiveInWeek();
+//   } else {
+//     document.getElementById("live").innerHTML = "5:15 PM";
+//     const vsImage = document.getElementById("vs");
+//     vsImage.style.display = "block";
+//   }
+// }
 
-function updateLiveInWeek() {
-  const vsImage = document.getElementById("vs");
-  vsImage.setAttribute("src", "img/vs2.png");
-}
+// function updateLiveInWeek() {
+//   const vsImage = document.getElementById("vs");
+//   vsImage.setAttribute("src", "img/vs2.png");
+// }
 
-// iniciar el intervalo
-setInterval(updateLiveText, 1000);
+// // iniciar el intervalo
+// setInterval(updateLiveText, 1000);
 
 
 
