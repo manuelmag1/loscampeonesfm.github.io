@@ -75,8 +75,8 @@
     });
     const [date, time] = now.split(", ");
 
-    const startHour = "8:00";
-    const endHour = "11:00";
+    const startHour = "6:00";
+    const endHour = "10:00";
 
     if (time >= startHour && time <= endHour) {
       document.getElementById("live").innerHTML = "EN VIVO";
