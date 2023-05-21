@@ -69,6 +69,28 @@
 
   // HORA SEMANA
 
+  // function updateLiveText() {
+  //   const now = new Date().toLocaleString("es-CO", {
+  //     timeZone: "America/Bogota",
+  //   });
+  //   const [date, time] = now.split(", ");
+
+  //   const startHour = "5:00";
+  //   const endHour = "8:00";
+
+  //   if (time >= startHour && time <= endHour) {
+  //     document.getElementById("live").innerHTML = "EN VIVO";
+  //     const vsImage = document.getElementById("vs");
+  //     vsImage.style.display = "none";
+  //   } else {
+  //     document.getElementById("live").innerHTML =
+  //       "LUNES A VIERNES <br> 1:00 PM - 3:00 PM";
+  //     const vsImage = document.getElementById("vs");
+  //     vsImage.style.display = "none";
+  //   }
+  // }
+
+//  HORA DE PARTIDO
   function updateLiveText() {
     const now = new Date().toLocaleString("es-CO", {
       timeZone: "America/Bogota",
@@ -76,41 +98,19 @@
     const [date, time] = now.split(", ");
 
     const startHour = "5:00";
-    const endHour = "8:00";
+    const endHour = "9:00";
 
     if (time >= startHour && time <= endHour) {
       document.getElementById("live").innerHTML = "EN VIVO";
       const vsImage = document.getElementById("vs");
-      vsImage.style.display = "none";
+      vsImage.style.display = "block";
     } else {
       document.getElementById("live").innerHTML =
-        "LUNES A VIERNES <br> 1:00 PM - 3:00 PM";
+        "5:00 PM";
       const vsImage = document.getElementById("vs");
-      vsImage.style.display = "none";
+      vsImage.style.display = "block";
     }
   }
-
-//  HORA DE PARTIDO
-  // function updateLiveText() {
-  //   const now = new Date().toLocaleString("es-CO", {
-  //     timeZone: "America/Bogota",
-  //   });
-  //   const [date, time] = now.split(", ");
-
-  //   const startHour = "5:15";
-  //   const endHour = "8:00";
-
-  //   if (time >= startHour && time <= endHour) {
-  //     document.getElementById("live").innerHTML = "EN VIVO";
-  //     const vsImage = document.getElementById("vs");
-  //     vsImage.style.display = "block";
-  //   } else {
-  //     document.getElementById("live").innerHTML =
-  //       "5:15 PM";
-  //     const vsImage = document.getElementById("vs");
-  //     vsImage.style.display = "block";
-  //   }
-  // }
 
   setInterval(updateLiveText, 1000);
 
