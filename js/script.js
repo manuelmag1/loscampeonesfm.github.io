@@ -69,7 +69,7 @@
 
   // HORA SEMANA
 
-  // function updateLiveText() {
+  function updateLiveText() {
     const now = new Date().toLocaleString("es-CO", {
       timeZone: "America/Bogota",
     });
