@@ -122,7 +122,7 @@
     });
     const [date, time] = now.split(", ");
 
-    const startHour = "7:30";
+    const startHour = "5:00";
     const endHour = "11:00";
 
     if (time >= startHour && time <= endHour) {
@@ -131,7 +131,7 @@
       vsImage.style.display = "block";
     } else {
       document.getElementById("live").innerHTML =
-        "7:30 PM";
+        "5:00 PM";
       const vsImage = document.getElementById("vs");
       vsImage.style.display = "block";
     }
