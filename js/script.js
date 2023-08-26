@@ -67,33 +67,32 @@
       mainHeroResize();
     });
 
-  // HORA SEMANA
+//   // HORA SEMANA
 
-<<<<<<< HEAD
-=======
-  function updateLiveText() {
-    const now = new Date().toLocaleString("es-CO", {
-      timeZone: "America/Bogota",
-    });
-    const [date, time] = now.split(", ");
+// <<<<<<< HEAD
+// =======
+//   function updateLiveText() {
+//     const now = new Date().toLocaleString("es-CO", {
+//       timeZone: "America/Bogota",
+//     });
+//     const [date, time] = now.split(", ");
 
-    const startHour = "3:00";
-    const endHour = "11:00";
+//     const startHour = "3:00";
+//     const endHour = "11:00";
 
-    if (time >= startHour && time <= endHour) {
-      document.getElementById("live").innerHTML = "EN VIVO";
-      const vsImage = document.getElementById("vs");
-      vsImage.style.display = "none";
-    } else {
-      document.getElementById("live").innerHTML =
-        "EN VIVO";
-      const vsImage = document.getElementById("vs");
-      vsImage.style.display = "none";
-    }
-  }
+//     if (time >= startHour && time <= endHour) {
+//       document.getElementById("live").innerHTML = "EN VIVO";
+//       const vsImage = document.getElementById("vs");
+//       vsImage.style.display = "none";
+//     } else {
+//       document.getElementById("live").innerHTML =
+//         "EN VIVO";
+//       const vsImage = document.getElementById("vs");
+//       vsImage.style.display = "none";
+//     }
+//   }
 
 //  HORA DE PARTIDO
->>>>>>> a8ffb5745a3ae631e84cf2d2ffbc57332c9f568f
   // function updateLiveText() {
   //   const now = new Date().toLocaleString("es-CO", {
   //     timeZone: "America/Bogota",
