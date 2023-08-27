@@ -130,7 +130,7 @@
       vsImage.style.display = "block";
     } else {
       document.getElementById("live").innerHTML =
-        "5:00 PM";
+        "EN VIVO";
       const vsImage = document.getElementById("vs");
       vsImage.style.display = "block";
     }
