@@ -124,17 +124,17 @@
   //   const startHour = "5:00";
   //   const endHour = "11:00";
 
-  //   if (time >= startHour && time <= endHour) {
-  //     document.getElementById("live").innerHTML = "EN VIVO";
-  //     const vsImage = document.getElementById("vs");
-  //     vsImage.style.display = "block";
-  //   } else {
-  //     document.getElementById("live").innerHTML =
-  //       "5:00 PM";
-  //     const vsImage = document.getElementById("vs");
-  //     vsImage.style.display = "block";
-  //   }
-  // }
+    if (time >= startHour && time <= endHour) {
+      document.getElementById("live").innerHTML = "EN VIVO";
+      const vsImage = document.getElementById("vs");
+      vsImage.style.display = "block";
+    } else {
+      document.getElementById("live").innerHTML =
+        "5:00 PM";
+      const vsImage = document.getElementById("vs");
+      vsImage.style.display = "block";
+    }
+  }
 
   setInterval(updateLiveText, 1000);
 
