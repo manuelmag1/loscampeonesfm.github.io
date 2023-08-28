@@ -70,27 +70,27 @@
 //   // HORA SEMANA
 
 // <<<<<<< HEAD
-// =======
-//   function updateLiveText() {
-//     const now = new Date().toLocaleString("es-CO", {
-//       timeZone: "America/Bogota",
-//     });
-//     const [date, time] = now.split(", ");
 
-//     const startHour = "3:00";
-//     const endHour = "11:00";
+  function updateLiveText() {
+    const now = new Date().toLocaleString("es-CO", {
+      timeZone: "America/Bogota",
+    });
+    const [date, time] = now.split(", ");
 
-//     if (time >= startHour && time <= endHour) {
-//       document.getElementById("live").innerHTML = "EN VIVO";
-//       const vsImage = document.getElementById("vs");
-//       vsImage.style.display = "none";
-//     } else {
-//       document.getElementById("live").innerHTML =
-//         "EN VIVO";
-//       const vsImage = document.getElementById("vs");
-//       vsImage.style.display = "none";
-//     }
-//   }
+    const startHour = "3:00";
+    const endHour = "11:00";
+
+    if (time >= startHour && time <= endHour) {
+      document.getElementById("live").innerHTML = "EN VIVO";
+      const vsImage = document.getElementById("vs");
+      vsImage.style.display = "none";
+    } else {
+      document.getElementById("live").innerHTML =
+        "EN VIVO";
+      const vsImage = document.getElementById("vs");
+      vsImage.style.display = "none";
+    }
+  }
 
 //  HORA DE PARTIDO
   // function updateLiveText() {
@@ -115,26 +115,26 @@
   // }
 
 //  HORA DE PARTID
-  function updateLiveText() {
-    const now = new Date().toLocaleString("es-CO", {
-      timeZone: "America/Bogota",
-    });
-    const [date, time] = now.split(", ");
+  // function updateLiveText() {
+  //   const now = new Date().toLocaleString("es-CO", {
+  //     timeZone: "America/Bogota",
+  //   });
+  //   const [date, time] = now.split(", ");
 
-    const startHour = "5:00";
-    const endHour = "11:00";
+  //   const startHour = "5:00";
+  //   const endHour = "11:00";
 
-    if (time >= startHour && time <= endHour) {
-      document.getElementById("live").innerHTML = "EN VIVO";
-      const vsImage = document.getElementById("vs");
-      vsImage.style.display = "block";
-    } else {
-      document.getElementById("live").innerHTML =
-        "5:00 PM";
-      const vsImage = document.getElementById("vs");
-      vsImage.style.display = "block";
-    }
-  }
+  //   if (time >= startHour && time <= endHour) {
+  //     document.getElementById("live").innerHTML = "EN VIVO";
+  //     const vsImage = document.getElementById("vs");
+  //     vsImage.style.display = "block";
+  //   } else {
+  //     document.getElementById("live").innerHTML =
+  //       "5:00 PM";
+  //     const vsImage = document.getElementById("vs");
+  //     vsImage.style.display = "block";
+  //   }
+  // }
 
   setInterval(updateLiveText, 1000);
 
