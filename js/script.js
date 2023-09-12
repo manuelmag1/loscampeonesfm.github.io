@@ -71,35 +71,13 @@
 
 // <<<<<<< HEAD
 
-  // function updateLiveText() {
-  //   const now = new Date().toLocaleString("es-CO", {
-  //     timeZone: "America/Bogota",
-  //   });
-  //   const [date, time] = now.split(", ");
-
-  //   const startHour = "3:00";
-  //   const endHour = "11:00";
-
-  //   if (time >= startHour && time <= endHour) {
-  //     document.getElementById("live").innerHTML = "EN VIVO";
-  //     const vsImage = document.getElementById("vs");
-  //     vsImage.style.display = "none";
-  //   } else {
-  //     document.getElementById("live").innerHTML =
-  //       "EN VIVO";
-  //     const vsImage = document.getElementById("vs");
-  //     vsImage.style.display = "none";
-  //   }
-  // }
-
-//  HORA DE PARTIDO
   function updateLiveText() {
     const now = new Date().toLocaleString("es-CO", {
       timeZone: "America/Bogota",
     });
     const [date, time] = now.split(", ");
 
-    const startHour = "7:20";
+    const startHour = "3:00";
     const endHour = "11:00";
 
     if (time >= startHour && time <= endHour) {
@@ -108,11 +86,33 @@
       vsImage.style.display = "none";
     } else {
       document.getElementById("live").innerHTML =
-        "LUNES A VIERNES <br> 1:00 PM - 3:00 PM";
+        "EN VIVO";
       const vsImage = document.getElementById("vs");
       vsImage.style.display = "none";
     }
   }
+
+//  HORA DE PARTIDO
+  // function updateLiveText() {
+  //   const now = new Date().toLocaleString("es-CO", {
+  //     timeZone: "America/Bogota",
+  //   });
+  //   const [date, time] = now.split(", ");
+
+  //   const startHour = "7:20";
+  //   const endHour = "11:00";
+
+  //   if (time >= startHour && time <= endHour) {
+  //     document.getElementById("live").innerHTML = "EN VIVO";
+  //     const vsImage = document.getElementById("vs");
+  //     vsImage.style.display = "none";
+  //   } else {
+  //     document.getElementById("live").innerHTML =
+  //       "LUNES A VIERNES <br> 1:00 PM - 3:00 PM";
+  //     const vsImage = document.getElementById("vs");
+  //     vsImage.style.display = "none";
+  //   }
+  // }
 
 //  HORA DE PARTID
   // function updateLiveText() {
