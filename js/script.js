@@ -86,7 +86,7 @@
       vsImage.style.display = "none";
     } else {
       document.getElementById("live").innerHTML =
-        "EN VIVO";
+        "LUNES A VIERNES <br> 1:00 PM - 3:00 PM";
       const vsImage = document.getElementById("vs");
       vsImage.style.display = "none";
     }
