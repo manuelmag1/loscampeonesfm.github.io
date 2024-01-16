@@ -7511,6 +7511,11 @@ button.bg-dark:focus {
   margin: 1.5rem !important;
 }
 
+.mt2-4,
+.my2-4 {
+  margin-top: -6.5rem !important;
+}
+
 .mt-4,
 .my-4 {
   margin-top: 1.5rem !important;

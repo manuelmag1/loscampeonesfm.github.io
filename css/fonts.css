@@ -372,6 +372,8 @@
 }
 .socicon-facebook:before {
   content: "\e028";
+  color: white;
+  box-shadow: 0cap;
 }
 .socicon-feedburner:before {
   content: "\e029";
@@ -456,6 +458,7 @@
 }
 .socicon-instagram:before {
   content: "\e044";
+  color: white;
 }
 .socicon-issuu:before {
   content: "\e045";
@@ -672,9 +675,11 @@
 }
 .socicon-twitch:before {
   content: "\e08c";
+  color: white;
 }
 .socicon-twitter:before {
   content: "\e08d";
+  color: white;
 }
 .socicon-uber:before {
   content: "\e08e";
@@ -747,6 +752,7 @@
 }
 .socicon-youtube:before {
   content: "\e0a5";
+  color: white;
 }
 .socicon-zapier:before {
   content: "\e0a6";
